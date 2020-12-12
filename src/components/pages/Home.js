@@ -43,7 +43,7 @@ const Home = () => {
         <Parallax bgImage={image1} strength={900}>
           <motion.div className={classes.root}>
             <Typography variant="h4" className={classes.text1}>
-              Welcome to SKite
+              Syyad Khan
             </Typography>
           </motion.div>
         </Parallax>
