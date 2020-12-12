@@ -14,6 +14,11 @@ import { AnimatePresence } from "framer-motion";
 import DarkModeToggle from "./components/layouts/DarkModeToggle";
 import { Grid } from "@material-ui/core";
 import Breadcrumb from "./components/layouts/Breadcrumb";
+import Portfolio from "./components/pages/Portfolio";
+import Amplify from "aws-amplify";
+import awsconfig from "./aws-exports";
+
+Amplify.configure(awsconfig);
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(getInitialMode);
@@ -81,6 +86,7 @@ const App = () => {
       <AnimatePresence exitBeforeEnter>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/portfolio" component={Portfolio} />
           <Redirect to="/" />
         </Switch>
       </AnimatePresence>

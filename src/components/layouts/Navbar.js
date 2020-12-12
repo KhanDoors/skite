@@ -153,6 +153,23 @@ export default function Navbar(props) {
               </Link>
             </ListItemText>
           </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              {" "}
+              <span role="img" aria-label="exercise">
+                {" "}
+                💥{" "}
+              </span>
+            </ListItemIcon>
+            <ListItemText>
+              <Link
+                style={{ color: "purple", textDecoration: "none" }}
+                to="/portfolio"
+              >
+                Portfolio
+              </Link>
+            </ListItemText>
+          </ListItem>
           {/* <ListItem>
             <ListItemIcon>
               {" "}
