@@ -3,21 +3,21 @@ import Grid from "@material-ui/core/Grid";
 import Navbar from "../layouts/Navbar";
 import Typography from "@material-ui/core/Typography";
 import Card from "@material-ui/core/Card";
-import { DataStore } from "@aws-amplify/datastore";
-import { Projects } from "../../models";
+// import { DataStore } from "@aws-amplify/datastore";
+// import { Projects } from "../../models";
 import { Paper } from "@material-ui/core";
 
 export default function Portfolio() {
   const [apps, setApps] = useState([]);
 
-  useEffect(() => {
-    const func = async () => {
-      const models = await DataStore.query(Projects);
-      setApps(models);
-      console.log(models);
-    };
-    func();
-  }, []);
+  // useEffect(() => {
+  //   const func = async () => {
+  //     const models = await DataStore.query(Projects);
+  //     setApps(models);
+  //     console.log(models);
+  //   };
+  //   func();
+  // }, []);
 
   return (
     <Navbar>
@@ -44,7 +44,7 @@ export default function Portfolio() {
             container
             justify="center"
           >
-            <Grid>
+            {/* <Grid>
               <Paper
                 style={{
                   marginTop: "10px",
@@ -72,7 +72,7 @@ export default function Portfolio() {
                   </Card>
                 ))}
               </Paper>
-            </Grid>
+            </Grid> */}
           </Grid>
         </Grid>
       </div>
