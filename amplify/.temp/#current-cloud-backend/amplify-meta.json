@@ -27,11 +27,12 @@
         "IdentityPoolName": "testAuthIdentityPool__staging",
         "UserPoolName": "SKite"
       },
-      "lastPushTimeStamp": "2020-12-15T19:51:53.813Z",
+      "lastPushTimeStamp": "2020-12-15T21:36:20.842Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyb175cb6ab7904-staging-190446-deployment/amplify-cfn-templates/auth/SKite-cloudformation-template.yml",
         "logicalId": "authSKite"
-      }
+      },
+      "lastPushDirHash": "YcK756bJ9rSI4wCP0oZSqh9Xebo="
     }
   },
   "api": {
@@ -55,12 +56,11 @@
         "GraphQLAPIIdOutput": "mukhyfsj55hwnpaoohlnm36pta",
         "GraphQLAPIEndpointOutput": "https://pklstbhfenbgxdyek3qtmunuhy.appsync-api.us-east-1.amazonaws.com/graphql"
       },
+      "lastPushTimeStamp": "2020-12-15T21:36:20.837Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyb175cb6ab7904-staging-190446-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiSKite"
-      },
-      "lastPushTimeStamp": "2020-12-15T19:51:55.654Z",
-      "lastPushDirHash": "m0SFg5aqii7ygkAbHzHe5UvQlvE="
+      }
     }
   }
 }
