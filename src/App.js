@@ -15,6 +15,7 @@ import DarkModeToggle from "./components/layouts/DarkModeToggle";
 import { Grid } from "@material-ui/core";
 import Breadcrumb from "./components/layouts/Breadcrumb";
 import Portfolio from "./components/pages/Portfolio";
+import { withAuthenticator } from "@aws-amplify/ui-react";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(getInitialMode);
@@ -91,4 +92,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default withAuthenticator(App);

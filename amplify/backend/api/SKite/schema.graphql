@@ -1,0 +1,8 @@
+type Projects @model @auth(rules: [{allow: groups, groups: ["admin"], operations: [read, create, update, delete]}, {allow: private, operations: [read]}, {allow: owner, operations: [read, create, update, delete]}]) {
+  id: ID!
+  title: String!
+  description: String!
+  url: AWSURL
+  dateCreated: AWSDate
+  active: Boolean
+}
