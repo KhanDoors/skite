@@ -1,9 +1,0 @@
-type Projects @model @auth(rules: [{allow: public}]) {
-  id: ID!
-  title: String!
-  content: String!
-  url: AWSURL
-  isActive: Boolean
-  createdDate: AWSDate
-}
- 
